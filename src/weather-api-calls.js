@@ -18,7 +18,9 @@ const getWeatherData = async (location) => {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
-    return await response.json();
+    const data = await response.json();
+
+    return data;
   } catch (error) {
     console.log("Could not fetch weather data: ", error);
   }
