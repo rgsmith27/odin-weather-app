@@ -1,4 +1,6 @@
 import "./styles.css";
-import { getWeatherData } from "./weather-api-calls.js";
+import {getTemperature, getDewpoint, getConditions} from "./weather-api-calls.js";
 
-getWeatherData("Hs");
+getTemperature("Hamilton, NY");
+getDewpoint("Hamilton, NY");
+getConditions("Hamilton, NY");
