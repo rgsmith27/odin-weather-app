@@ -50,7 +50,5 @@ let dewp = weatherData.days[0].dew;
 
   const conditions = weatherData.days[0].conditions;
 
-
-
   return { temp: temp, dewp: dewp, conditions: conditions };
 }

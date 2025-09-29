@@ -6,13 +6,19 @@
     <title>TOP Weather App</title>
   </head>
   <body>
-    <div id="root">
-        <div class="conditions-display">
-            ---
+    <div id="container">
+        <div class = "header">
+            What's the weather today?
         </div>
-        <div class="temp-dewp-display">
-            -- / --
+        <div class = "weather-display">
+            <div class="conditions-display">
+                ---
+            </div>
+            <div class="temp-dewp-display">
+                -- / --
+            </div>
         </div>
+
       <form id="weather-query-form">
         <input
           type="text"
@@ -20,11 +26,13 @@
           name="location"
           placeholder="Enter a location"
         />
-        <label for="location">Enter a location</label>
         <button type="submit">Get Weather</button>
       </form>
-        <div class="unit-toggle-desc">Get temp in: </div>
-        <button class="unit-toggle">Fahrenheit</button>
+        <div class="units-container">
+            <div class="unit-toggle-desc">Get temp in: </div>
+            <button class="unit-toggle">Fahrenheit</button>
+        </div>
+
     </div>
   </body>
 </html>
